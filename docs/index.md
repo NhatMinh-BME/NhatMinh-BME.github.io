@@ -2,10 +2,12 @@
 layout: home
 
 hero:
-  name: "Nguyen Le Y"
+  name: "Nguyen Nhat Minh"
   text: "Biomedical Engineer"
   tagline: "I build embedded systems and biomedical instruments, from circuit boards and firmware to working prototypes."
-  image: /images/my-removebg.png
+  image:
+    src: /images/profile.jpg
+    alt: "Portrait of Nguyen Nhat Minh"
   actions:
     - theme: brand
       text: Explore selected projects

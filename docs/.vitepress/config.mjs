@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Nguyen Le Y | Biomedical Engineer",
-  description: "Portfolio of Nguyen Le Y, featuring biomedical instrumentation, embedded systems, hardware design, and research.",
+  title: "Nguyen Nhat Minh | Biomedical Engineer",
+  description: "Portfolio of Nguyen Nhat Minh, featuring biomedical instrumentation, embedded systems, hardware design, and research.",
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -12,7 +12,6 @@ export default defineConfig({
       { text: 'Research', link: '/publication' },
       { text: 'Writing', link: '/blogs' },
       { text: 'Tools', link: '/tools/' },
-      { text: 'STM32 course (VI)', link: 'https://leybme.github.io/stm32-vi/' },
     ],
 
     sidebar: [
@@ -52,13 +51,11 @@ export default defineConfig({
     ],
     footer: {
       message: 'Open to remote opportunities.',
-      copyright: '© Nguyen Le Y'
+      copyright: '© Nguyen Nhat Minh'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/leybme' },
-      { icon: 'facebook', link: 'https://facebook.com/ley995' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/nguyenley' },
+      { icon: 'github', link: 'https://github.com/NhatMinh-BME' },
     ],
     search: {
       provider: 'local'

@@ -1,4 +1,4 @@
-# Nguyen Le Y — Portfolio
+# Nguyen Nhat Minh — Portfolio
 
 Personal portfolio and engineering notes, built with [VitePress](https://vitepress.dev/).
 
