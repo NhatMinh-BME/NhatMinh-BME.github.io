@@ -3,32 +3,32 @@ layout: home
 
 hero:
   name: "Nguyen Nhat Minh"
-  text: "Portfolio"
-  tagline: "A personal space for projects, ideas, and collaborations."
+  text: "Biomedical Engineer"
+  tagline: "Biofabrication technology, biomedical devices, and AI-assisted medical imaging."
   image:
     src: /images/profile.jpg
     alt: "Portrait of Nguyen Nhat Minh"
   actions:
     - theme: brand
-      text: View projects
-      link: /projects
+      text: View publications
+      link: /publications
     - theme: alt
       text: About me
       link: /about
 
 features:
-  - title: Projects
-    details: "Selected work, process notes, and lessons learned."
-    link: /projects
-    linkText: Add your projects
+  - title: Publications
+    details: "Journal articles and conference proceedings in biomedical engineering."
+    link: /publications
+    linkText: Explore publications
 
   - title: About
-    details: "Background, interests, and what I’m working toward."
+    details: "My interests in biofabrication and biomedical engineering."
     link: /about
-    linkText: Add your introduction
+    linkText: More about me
 
   - title: Faculty collaborators
-    details: "People who have shared their time, guidance, and expertise."
+    details: "Faculty collaborators in biomedical engineering and related fields."
     link: /collaborators
-    linkText: Add collaborators
+    linkText: Meet collaborators
 ---

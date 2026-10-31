@@ -1,4 +1,4 @@
-# Projects
+# Project Template
 
 Copy this template for each project and replace the bracketed text. Remove any sections that do not apply, and only publish claims and images you can share.
 

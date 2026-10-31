@@ -9,7 +9,6 @@ export default defineConfig({
     siteTitle: 'NhatMinh-BME',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects' },
       { text: 'About', link: '/about' },
       { text: 'Publications', link: '/publications' },
       { text: 'Patent Applications', link: '/patent-applications' },

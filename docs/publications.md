@@ -20,7 +20,7 @@
   <article class="publication-card">
     <p class="publication-year">2025 · Journal article</p>
     <h2>Enhancing Pneumonia Diagnosis Through Pre-processing Approaches and Advanced AI Models: A Comparative Study and Deployment on Web and Mobile Platforms</h2>
-    <p class="publication-authors">Huynh, N.-P., Ngo, T.-L., Pham, T.-T.-H., Nguyen, T.-N., Nguyen, N.-M., and Le, N.-B.</p>
+    <p class="publication-authors">Huynh, N.-P., Ngo, T.-L., Pham, T.-T.-H., Nguyen, T.-N., <strong>Nguyen, N.-M.</strong>, and Le, N.-B.</p>
     <p class="publication-venue"><em>International Journal of Biomedical Engineering and Technology</em>, 48(1), 27–54.</p>
     <p class="publication-links"><a href="https://doi.org/10.1504/IJBET.2025.146422" target="_blank" rel="noreferrer">View DOI ↗</a></p>
   </article>
@@ -28,7 +28,7 @@
   <article class="publication-card">
     <p class="publication-year">2025 · Conference proceedings</p>
     <h2>Innovative Precision: Design and Implementation of a Screw-Based Continuous Extrusion 3D Bioprinting Head</h2>
-    <p class="publication-authors">Huy, C.-T., Huynh, A.-Q., Vu, T.-B., Nguyen, L.-Y., Nguyen, N.-M., and Le, N.-B.</p>
+    <p class="publication-authors">Huy, C.-T., Huynh, A.-Q., Vu, T.-B., Nguyen, L.-Y., <strong>Nguyen, N.-M.</strong>, and Le, N.-B.</p>
     <p class="publication-venue"><em>10th International Conference on the Development of Biomedical Engineering in Vietnam (BME 2024)</em>, IFMBE Proceedings 122. Springer.</p>
     <p class="publication-links"><a href="https://doi.org/10.1007/978-3-031-90194-2_12" target="_blank" rel="noreferrer">View DOI ↗</a></p>
   </article>
@@ -36,7 +36,7 @@
   <article class="publication-card">
     <p class="publication-year">2025 · Conference proceedings</p>
     <h2>Efficiency Unleashed: Design and Implementation of an Advanced Material Feeding System for Continuous Extrusion 3D Bioprinting</h2>
-    <p class="publication-authors">Huynh, A.-Q., Chau, T.-H., Nguyen, L.-Y., Nguyen, N.-M., and Le, N.-B.</p>
+    <p class="publication-authors">Huynh, A.-Q., Chau, T.-H., Nguyen, L.-Y., <strong>Nguyen, N.-M.</strong>, and Le, N.-B.</p>
     <p class="publication-venue"><em>10th International Conference on the Development of Biomedical Engineering in Vietnam (BME 2024)</em>, IFMBE Proceedings 122. Springer.</p>
     <p class="publication-links"><a href="https://doi.org/10.1007/978-3-031-90194-2_11" target="_blank" rel="noreferrer">View DOI ↗</a></p>
   </article>

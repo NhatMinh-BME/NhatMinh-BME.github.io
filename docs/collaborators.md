@@ -1,6 +1,6 @@
 # Faculty Collaborators
 
-Faculty and researchers connected to my academic work. Profile details below come from public researcher or institutional records, alongside information I provided. Titles and affiliations can change, so please check the linked profiles for the latest information.
+I value the guidance and collaboration of faculty working across biomedical engineering and related research areas.
 
 <div class="collaborator-grid">
   <!-- Dr. Hoan Ngoc Doan -->
@@ -16,13 +16,12 @@ Faculty and researchers connected to my academic work. Profile details below com
     <p class="collaborator-role">School of Biomedical Engineering</p>
     <h2>Dr. Nguyen Thanh Tam</h2>
     <p><strong>Collaboration Focus:</strong> Joint research on developing bioelectronic devices.</p>
-    <p class="collaborator-note">Add an official profile or ORCID link once the identity is confirmed.</p>
   </article>
 
   <!-- Assoc. Prof. Le Ngoc Bich -->
   <article class="collaborator-card">
     <p class="collaborator-role">School of Biomedical Engineering</p>
-    <h2>Assoc. Prof. Le Ngoc Bich</h2>
+    <h2>Le Ngoc Bich</h2>
     <p><strong>Collaboration Focus:</strong> Collaborating on biomedical image processing and undergraduate laboratory instruction.</p>
     <p class="collaborator-links"><a href="https://orcid.org/0000-0001-7431-0157" target="_blank" rel="noreferrer">ORCID ↗</a></p>
   </article>
