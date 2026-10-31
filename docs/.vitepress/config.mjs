@@ -11,6 +11,8 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Projects', link: '/projects' },
       { text: 'About', link: '/about' },
+      { text: 'Publications', link: '/publications' },
+      { text: 'Patent Applications', link: '/patent-applications' },
       { text: 'Faculty collaborators', link: '/collaborators' },
     ],
     outline: [2, 3],
