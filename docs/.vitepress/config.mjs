@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  appearance: false,
   title: "Nguyen Nhat Minh | Portfolio",
   description: "Personal portfolio of Nguyen Nhat Minh.",
   themeConfig: {
