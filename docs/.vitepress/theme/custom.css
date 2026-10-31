@@ -96,6 +96,90 @@
   letter-spacing: -0.04em;
 }
 
+.collaborator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 30px 0 42px;
+}
+
+.collaborator-card {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 100% 0, rgb(8 126 139 / 7%), transparent 42%),
+    var(--vp-c-bg);
+  box-shadow: 0 12px 30px rgb(23 61 70 / 5%);
+}
+
+.collaborator-card h2 {
+  margin: 8px 0 14px;
+  border: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.035em;
+}
+
+.collaborator-card p {
+  line-height: 1.75;
+}
+
+.collaborator-card .collaborator-role {
+  margin: 0;
+  color: var(--vp-c-brand-1);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.collaborator-card--verify {
+  background:
+    radial-gradient(ellipse at 100% 0, rgb(191 128 25 / 8%), transparent 42%),
+    var(--vp-c-bg);
+}
+
+.collaborator-card--verify .collaborator-role {
+  color: #96620d;
+}
+
+.collaborator-card .collaborator-note {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}
+
+.collaborator-card .collaborator-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+}
+
+.collaborator-card .collaborator-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 13px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  color: var(--vp-c-brand-1);
+  font-size: 0.86rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.collaborator-card .collaborator-links a:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.collaborator-card .collaborator-links a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
 @media (max-width: 767px) {
   .VPHome .VPHero {
     margin: 14px 16px 0;
@@ -111,6 +195,15 @@
   .VPHome .VPFeatures {
     padding: 24px 16px 48px;
   }
+
+  .collaborator-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .collaborator-card {
+    padding: 22px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -120,5 +213,9 @@
 
   .VPHome .VPFeature:hover {
     transform: none;
+  }
+
+  .collaborator-card .collaborator-links a {
+    transition: none;
   }
 }
