@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMS1117 Efficiency vs Vin</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .input-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: 0.5rem; }
+    input[type="number"] { width: 100%; padding: 0.5rem; font-size: 1rem; }
+    #chart-container { width: 100%; max-width: 700px; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>AMS1117 Efficiency vs Vin</h1>
+  <div class="input-group">
+    <label for="vout">Output Voltage (Vout, V):</label>
+    <input type="number" id="vout" step="0.01" value="3.3">
+  </div>
+  <div class="input-group">
+    <label for="iout">Load Current (Iout, A):</label>
+    <input type="number" id="iout" step="0.01" value="0.5">
+  </div>
+  <div class="input-group">
+    <label for="iq">Quiescent Current (Iq, A):</label>
+    <input type="number" id="iq" step="0.0001" value="0.005">
+  </div>
+
+  <div id="chart-container">
+    <canvas id="effChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('effChart').getContext('2d');
+    const effChart = new Chart(ctx, {
+      type: 'line',
+      data: { labels: [], datasets: [{ label: 'Efficiency (%)', data: [], fill: false, borderWidth: 2 }] },
+      options: {
+        scales: {
+          x: { title: { display: true, text: 'Vin (V)' } },
+          y: { beginAtZero: true, max: 100, title: { display: true, text: 'Efficiency (%)' } }
+        }
+      }
+    });
+
+    function plotEfficiency() {
+      const Vout = parseFloat(document.getElementById('vout').value);
+      const Iout = parseFloat(document.getElementById('iout').value);
+      const Iq = parseFloat(document.getElementById('iq').value);
+      if (![Vout, Iout, Iq].every(v => !isNaN(v) && v > 0)) return;
+
+      const vins = [];
+      const effs = [];
+      for (let vin = Vout + 0.1; vin <= 20; vin += 0.5) {
+        const Pin = vin * (Iout + Iq);
+        const Pout = Vout * Iout;
+        const eta = (Pout / Pin) * 100;
+        vins.push(vin.toFixed(2));
+        effs.push(parseFloat(eta.toFixed(2)));
+      }
+
+      effChart.data.labels = vins;
+      effChart.data.datasets[0].data = effs;
+      effChart.update();
+    }
+
+    ['vout','iout','iq'].forEach(id => {
+      document.getElementById(id).addEventListener('input', plotEfficiency);
+    });
+
+    // Initial plot
+    plotEfficiency();
+  </script>
+</body>
+</html>
