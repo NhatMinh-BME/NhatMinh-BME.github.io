@@ -197,6 +197,21 @@
   margin: 30px 0 42px;
 }
 
+.VPDoc.has-aside:has(.publication-grid) .container {
+  display: block;
+  max-width: 1180px;
+}
+
+.VPDoc.has-aside:has(.publication-grid) .aside {
+  display: none;
+}
+
+.VPDoc.has-aside:has(.publication-grid) .content,
+.VPDoc.has-aside:has(.publication-grid) .content-container {
+  width: 100%;
+  max-width: none;
+}
+
 .publication-card {
   display: flex;
   flex-direction: column;
